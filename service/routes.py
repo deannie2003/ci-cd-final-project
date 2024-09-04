@@ -120,3 +120,13 @@ def reset_counters():
     global COUNTER  # pylint: disable=global-statement
     if app.testing:
         COUNTER = {}
+
+# Dòng gốc
+@app.route('/api/v1/very_long_endpoint_name_here', methods=['GET'])
+def very_long_function_name_here():
+    pass
+
+# Dòng đã tái cấu trúc
+@app.route('/api/v1/very_long_endpoint_name_here', methods=['GET'])
+def very_long_function_name():
+    pass

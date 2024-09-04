@@ -2,6 +2,11 @@
 Service Package
 """
 from flask import Flask
+# Dòng gốc
+import very_long_module_name as vlmn
+
+# Dòng đã tái cấu trúc
+import very_long_module_name_as_vlmn
 
 app = Flask(__name__)
 
